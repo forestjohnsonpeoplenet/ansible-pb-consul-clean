@@ -3,7 +3,7 @@
   gather_facts: False
   vars_files:
   - "vars/main.yml"
+  pre_tasks:
+    - name: 'echo helloworld'
+      raw: echo helloworld
 
-  tasks:
-  - name: 'echo helloworld'
-    shell:  echo helloworld
